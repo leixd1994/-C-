@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main()
+{
+	void change(int b[],int i);
+	int i,a[10]={3,7,9,11,0,6,7,5,4,2};
+for (i=0;i<=4;i++)
+change(a,i);
+for (i=0;i<=9;i++)
+printf("%d  ",a[i]);
+}
+void change(int *b,int i)
+{
+int k;
+k=*(b+i);
+*[i]=*[9-i];
+*[9-i]=*[i];
+}
